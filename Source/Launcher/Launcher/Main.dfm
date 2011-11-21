@@ -203,8 +203,11 @@ object ChaoslauncherForm: TChaoslauncherForm
     object News: TTabSheet
       Caption = 'News'
       ImageIndex = 4
+      TabVisible = False
       OnHide = NewsHide
       OnShow = NewsShow
+      ExplicitLeft = 20
+      ExplicitTop = 28
       object Panel2: TPanel
         Left = 0
         Top = 0
@@ -2592,6 +2595,7 @@ object ChaoslauncherForm: TChaoslauncherForm
     end
     object Streams1: TMenuItem
       Caption = 'Streams'
+      Visible = False
       object TvAnts1: TMenuItem
         Caption = '&TvAnts'
         object N3: TMenuItem
