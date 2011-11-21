@@ -1,0 +1,41 @@
+DelphiX 02-2000 : by TridenT, from DelphiX991024 of Hori.
+
+Use : There is no change to work with. Your projects will compile without bugs. All the modifications are in agreement with Hori's philosophy and exemples.
+______________________________________________________________________________________
+
+[02.2000] (DXSPRITE.PAS)
+# Add TImageSprite.SetImage(Img : TPictureCollectionItem);
+Modification of the published property : Image, Write SetImage;
+
+When you change Image variable of the Sprite, it refresh Width and Height propertys.
+
+# Add TBackGroundSprite.SetImage(Img : TPictureCollectionItem);
+Modification of the published property : Image, Write SetImage;
+
+When you change Image variable of the Sprite, it refresh Width and Height propertys.
+_____________________________________________________________________________________
+
+[12.1999] (DXSPRITE.PAS)
+#  Procedure TBackGroundSprite.SetMapSize;
+   Refresh FWidth and FHeight when you resize the sprite, otherwise, Heigth & Width are not valid.
+______________________________________________________________________________________
+
+[11.99] (DELPHIX.HLP) Compilation of the file for English version.
+______________________________________________________________________________________
+
+[11.99] (DXSPRITE.PAS) 
+# TSprite.GetSpriteAt(X,Y : Integer) : TSprite
+  Sprite.Width -> Sprite.Height.
+The search of the Sprite has errors, Width*Width rectangle is replace by Width*Height.
+_______________________________________________________________________________________
+
+[11.99] (DXINPUT.PAS) TMouse.Initialize;
+if FDXInput.FDInput<>nil then
+  begin
+    if FDXInput.FDInput.CreateDevice(GUID_SysMouse, FDevice, nil)<>DI_OK then Exit;
+    FDevice.SetDataFormat(c_dfDIMouse);
+  end; //else
+    //raise EDXInputError.Create(SNecessaryDirectInputUseMouse);
+
+Sometimes, the init results in an exception. The new code prevent it.
+_______________________________________________________________________________________

@@ -1,0 +1,59 @@
+object AdvLoaderConfig: TAdvLoaderConfig
+  Left = 0
+  Top = 0
+  AutoSize = True
+  BorderIcons = [biSystemMenu]
+  Caption = 'AdvLoaderConfig'
+  ClientHeight = 266
+  ClientWidth = 230
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poScreenCenter
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object PropertyPanel: TPanel
+    Left = 0
+    Top = 0
+    Width = 230
+    Height = 225
+    Align = alTop
+    BevelOuter = bvNone
+    TabOrder = 0
+  end
+  object ButtonPanel: TPanel
+    Left = 0
+    Top = 225
+    Width = 230
+    Height = 41
+    Align = alTop
+    BevelOuter = bvNone
+    TabOrder = 1
+    object OK: TButton
+      Left = 8
+      Top = 6
+      Width = 89
+      Height = 25
+      Caption = '&OK'
+      Default = True
+      ModalResult = 1
+      TabOrder = 0
+      OnClick = OkClick
+    end
+    object Cancel: TButton
+      Left = 103
+      Top = 6
+      Width = 90
+      Height = 25
+      Cancel = True
+      Caption = '&Cancel'
+      ModalResult = 2
+      TabOrder = 1
+    end
+  end
+end

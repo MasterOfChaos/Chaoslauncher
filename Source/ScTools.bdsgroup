@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <PersonalityInfo>
+    <Option>
+      <Option Name="Personality">Default.Personality</Option>
+      <Option Name="ProjectType"></Option>
+      <Option Name="Version">1.0</Option>
+      <Option Name="GUID">{0060562A-E3E9-4E47-9CC8-7E240A2039DE}</Option>
+    </Option>
+  </PersonalityInfo>
+  <Default.Personality>
+    
+    
+    
+    <Projects>
+      <Projects Name="Chaoslauncher.exe">Launcher\Launcher\Chaoslauncher.bdsproj</Projects>
+      <Projects Name="Chaosplugin.bwl">Plugins\Chaosplugin\Chaosplugin.bdsproj</Projects>
+      <Projects Name="Targets">Chaoslauncher.exe Chaosplugin.bwl</Projects>
+    </Projects>
+    <Dependencies/>
+  </Default.Personality>
+</BorlandProject>
