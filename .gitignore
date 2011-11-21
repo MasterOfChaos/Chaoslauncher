@@ -1,0 +1,16 @@
+/Private/
+/StarcraftTools/
+
+*.dcu
+*.~*
+*.local
+*.identcache
+*.exe
+*.dll
+*.log
+*.bwl
+*.inj
+*.zip
+*.map
+__log.txt
+.svn
