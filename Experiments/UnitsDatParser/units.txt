@@ -1,0 +1,229 @@
+0x00 - Terran Marine 
+0x01 - Terran Ghost 
+0x02 - Terran Vulture 
+0x03 - Terran Goliath 
+0x04 - Goliath Turret 
+0x05 - Terran Siege Tank (Tank Mode) 
+0x06 - Siege Tank Turret (Tank Mode) 
+0x07 - Terran SCV 
+0x08 - Terran Wraith 
+0x09 - Terran Science Vessel 
+0x0A - Gui Montag (Firebat) 
+0x0B - Terran Dropship 
+0x0C - Terran Battlecruiser 
+0x0D - Spider Mine 
+0x0E - Nuclear Missile 
+0x0F - Terran Civilian 
+0x10 - Sarah Kerrigan (Ghost) 
+0x11 - Alan Schezar (Goliath) 
+0x12 - Alan Schezar Turret 
+0x13 - Jim Raynor (Vulture) 
+0x14 - Jim Raynor (Marine) 
+0x15 - Tom Kazansky (Wraith) 
+0x16 - Magellan (Science Vessel) 
+0x17 - Edmund Duke (Tank Mode) 
+0x18 - Edmund Duke Turret (Tank Mode) 
+0x19 - Edmund Duke (Siege Mode) 
+0x1A - Edmund Duke Turret (Siege Mode) 
+0x1B - Arcturus Mengsk (Battlecruiser) 
+0x1C - Hyperion (Battlecruiser) 
+0x1D - Norad II (Battlecruiser) 
+0x1E - Terran Siege Tank (Siege Mode) 
+0x1F - Siege Tank Turret (Siege Mode) 
+0x20 - Terran Firebat 
+0x21 - Scanner Sweep 
+0x22 - Terran Medic 
+0x23 - Zerg Larva 
+0x24 - Zerg Egg 
+0x25 - Zerg Zergling 
+0x26 - Zerg Hydralisk 
+0x27 - Zerg Ultralisk 
+0x28 - Zerg Broodling 
+0x29 - Zerg Drone 
+0x2A - Zerg Overlord 
+0x2B - Zerg Mutalisk 
+0x2C - Zerg Guardian 
+0x2D - Zerg Queen 
+0x2E - Zerg Defiler 
+0x2F - Zerg Scourge 
+0x30 - Torrasque (Ultralisk) 
+0x31 - Matriarch (Queen) 
+0x32 - Infested Terran 
+0x33 - Infested Kerrigan (Infested Terran) 
+0x34 - Unclean One (Defiler) 
+0x35 - Hunter Killer (Hydralisk) 
+0x36 - Devouring One (Zergling) 
+0x37 - Kukulza (Mutalisk) 
+0x38 - Kukulza (Guardian) 
+0x39 - Yggdrasill (Overlord) 
+0x3A - Terran Valkyrie 
+0x3B - Mutalisk Cocoon 
+0x3C - Protoss Corsair 
+0x3D - Protoss Dark Templar (Unit) 
+0x3E - Zerg Devourer 
+0x3F - Protoss Dark Archon 
+0x40 - Protoss Probe 
+0x41 - Protoss Zealot 
+0x42 - Protoss Dragoon 
+0x43 - Protoss High Templar 
+0x44 - Protoss Archon 
+0x45 - Protoss Shuttle 
+0x46 - Protoss Scout 
+0x47 - Protoss Arbiter 
+0x48 - Protoss Carrier 
+0x49 - Protoss Interceptor 
+0x4A - Protoss Dark Templar (Hero) 
+0x4B - Zeratul (Dark Templar) 
+0x4C - Tassadar/Zeratul (Archon) 
+0x4D - Fenix (Zealot) 
+0x4E - Fenix (Dragoon) 
+0x4F - Tassadar (Templar) 
+0x50 - Mojo (Scout) 
+0x51 - Warbringer (Reaver) 
+0x52 - Gantrithor (Carrier) 
+0x53 - Protoss Reaver 
+0x54 - Protoss Observer 
+0x55 - Protoss Scarab 
+0x56 - Danimoth (Arbiter) 
+0x57 - Aldaris (Templar) 
+0x58 - Artanis (Scout) 
+0x59 - Rhynadon (Badlands Critter) 
+0x5A - Bengalaas (Jungle Critter) 
+0x5B - Cargo Ship (Unused) 
+0x5C - Mercenary Gunship (Unused) 
+0x5D - Scantid (Desert Critter) 
+0x5E - Kakaru (Twilight Critter) 
+0x5F - Ragnasaur (Ashworld Critter) 
+0x60 - Ursadon (Ice World Critter) 
+0x61 - Lurker Egg 
+0x62 - Raszagal (Corsair) 
+0x63 - Samir Duran (Ghost) 
+0x64 - Alexei Stukov (Ghost) 
+0x65 - Map Revealer 
+0x66 - Gerard DuGalle (BattleCruiser) 
+0x67 - Zerg Lurker 
+0x68 - Infested Duran (Infested Terran) 
+0x69 - Disruption Web 
+0x6A - Terran Command Center 
+0x6B - Terran Comsat Station 
+0x6C - Terran Nuclear Silo 
+0x6D - Terran Supply Depot 
+0x6E - Terran Refinery 
+0x6F - Terran Barracks 
+0x70 - Terran Academy 
+0x71 - Terran Factory 
+0x72 - Terran Starport 
+0x73 - Terran Control Tower 
+0x74 - Terran Science Facility 
+0x75 - Terran Covert Ops 
+0x76 - Terran Physics Lab 
+0x77 - Starbase (Unused) 
+0x78 - Terran Machine Shop 
+0x79 - Repair Bay (Unused) 
+0x7A - Terran Engineering Bay 
+0x7B - Terran Armory 
+0x7C - Terran Missile Turret 
+0x7D - Terran Bunker 
+0x7E - Norad II (Crashed) 
+0x7F - Ion Cannon 
+0x80 - Uraj Crystal 
+0x81 - Khalis Crystal 
+0x82 - Infested Command Center 
+0x83 - Zerg Hatchery 
+0x84 - Zerg Lair 
+0x85 - Zerg Hive 
+0x86 - Zerg Nydus Canal 
+0x87 - Zerg Hydralisk Den 
+0x88 - Zerg Defiler Mound 
+0x89 - Zerg Greater Spire 
+0x8A - Zerg Queen's Nest 
+0x8B - Zerg Evolution Chamber 
+0x8C - Zerg Ultralisk Cavern 
+0x8D - Zerg Spire 
+0x8E - Zerg Spawning Pool 
+0x8F - Zerg Creep Colony 
+0x90 - Zerg Spore Colony 
+0x91 - Unused Zerg Building1 
+0x92 - Zerg Sunken Colony 
+0x93 - Zerg Overmind (With Shell) 
+0x94 - Zerg Overmind 
+0x95 - Zerg Extractor 
+0x96 - Mature Chrysalis 
+0x97 - Zerg Cerebrate 
+0x98 - Zerg Cerebrate Daggoth 
+0x99 - Unused Zerg Building2 
+0x9A - Protoss Nexus 
+0x9B - Protoss Robotics Facility 
+0x9C - Protoss Pylon 
+0x9D - Protoss Assimilator 
+0x9E - Unused Protoss Building1 
+0x9F - Protoss Observatory 
+0xA0 - Protoss Gateway 
+0xA1 - Unused Protoss Building2 
+0xA2 - Protoss Photon Cannon 
+0xA3 - Protoss Citadel of Adun 
+0xA4 - Protoss Cybernetics Core 
+0xA5 - Protoss Templar Archives 
+0xA6 - Protoss Forge 
+0xA7 - Protoss Stargate 
+0xA8 - Stasis Cell/Prison 
+0xA9 - Protoss Fleet Beacon 
+0xAA - Protoss Arbiter Tribunal 
+0xAB - Protoss Robotics Support Bay 
+0xAC - Protoss Shield Battery 
+0xAD - Khaydarin Crystal Formation 
+0xAE - Protoss Temple 
+0xAF - Xel'Naga Temple 
+0xB0 - Mineral Field (Type 1) 
+0xB1 - Mineral Field (Type 2) 
+0xB2 - Mineral Field (Type 3) 
+0xB3 - Cave (Unused) 
+0xB4 - Cave-in (Unused) 
+0xB5 - Cantina (Unused) 
+0xB6 - Mining Platform (Unused) 
+0xB7 - Independent Command Center (Unused) 
+0xB8 - Independent Starport (Unused) 
+0xB9 - Independent Jump Gate (Unused) 
+0xBA - Ruins (Unused) 
+0xBB - Khaydarin Crystal Formation (Unused) 
+0xBC - Vespene Geyser 
+0xBD - Warp Gate 
+0xBE - Psi Disrupter 
+0xBF - Zerg Marker 
+0xC0 - Terran Marker 
+0xC1 - Protoss Marker 
+0xC2 - Zerg Beacon 
+0xC3 - Terran Beacon 
+0xC4 - Protoss Beacon 
+0xC5 - Zerg Flag Beacon 
+0xC6 - Terran Flag Beacon 
+0xC7 - Protoss Flag Beacon 
+0xC8 - Power Generator 
+0xC9 - Overmind Cocoon 
+0xCA - Dark Swarm 
+0xCB - Floor Missile Trap 
+0xCC - Floor Hatch (Unused) 
+0xCD - Left Upper Level Door 
+0xCE - Right Upper Level Door 
+0xCF - Left Pit Door 
+0xD0 - Right Pit Door 
+0xD1 - Floor Gun Trap 
+0xD2 - Left Wall Missile Trap 
+0xD3 - Left Wall Flame Trap 
+0xD4 - Right Wall Missile Trap 
+0xD5 - Right Wall Flame Trap 
+0xD6 - Start Location 
+0xD7 - Flag 
+0xD8 - Young Chrysalis 
+0xD9 - Psi Emitter 
+0xDA - Data Disc 
+0xDB - Khaydarin Crystal 
+0xDC - Mineral Cluster Type 1 
+0xDD - Mineral Cluster Type 2 
+0xDE - Protoss Vespene Gas Orb Type 1 
+0xDF - Protoss Vespene Gas Orb Type 2 
+0xE0 - Zerg Vespene Gas Sac Type 1 
+0xE1 - Zerg Vespene Gas Sac Type 2 
+0xE2 - Terran Vespene Gas Tank Type 1 
+0xE3 - Terran Vespene Gas Tank Type 2
+0xE4 - [None (228)]

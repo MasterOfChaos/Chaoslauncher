@@ -1,0 +1,45 @@
+CPU Savior Plugin for Chaoslauncher / BWLauncher (v1.5)
+by R1CH
+
+About
+-----
+This plugin will introduce a 1 millisecond delay every time StarCraft queries
+Windows to ask what the time is (GetTickCount). Since StarCraft does this so
+often with no delay, it results in 100% CPU usage. With this plugin, CPU use
+is greatly reduced.
+
+Replaying replays at high speed with this plugin will result in some lag.
+
+Risks
+-----
+Modifies Import Address Table in memory. Does not modify StarCraft code.
+
+History
+-------
+
+v1.0 (Feb 05 2008)
+  * First and final release, for 1.15.2.
+
+v1.1 (Mar 21 2008)
+  * Well I guess 1.0 wasn't the final release after all :). Added code to
+    Sleep during Battle.Net dialog loop so the bnet lobby doesn't consume
+    100% CPU. Hard-coded storm.dll offset, if your storm.dll is relocated
+    this will likely crash.
+
+v1.2 (Mar 27 2008)
+  * Injects a thread to set the timer resolution to 1ms. This should hopefully
+    fix the few cases that people reported where the plugin causes severe
+    delays.
+
+v1.3 (Apr 10 2008)
+  * Fix an access violation when running on a system with DEP enabled for all
+    programs.
+
+v1.4 (Jun 02 2008)
+  * Sleep only on calls from game loop, menu and bnet instead of every call.
+    Hopefully this should fix the "mouse lag" reported by some users, and also
+    allows replays to run at 16x without a problem. CPU usage may be slightly
+    higher than previous versions however, but still nowhere near 100%.
+
+v1.5 (Sep 14 2008)
+  * Updated offsets for 1.15.3 patch.

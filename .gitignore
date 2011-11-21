@@ -13,4 +13,5 @@
 *.zip
 *.map
 __log.txt
+Thumbs.db
 .svn

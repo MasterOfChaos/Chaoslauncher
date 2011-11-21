@@ -1,0 +1,1 @@
+The files in external are only provided for the convenience of the user. The licence of this project does not apply to them.
