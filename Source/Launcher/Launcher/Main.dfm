@@ -206,8 +206,6 @@ object ChaoslauncherForm: TChaoslauncherForm
       TabVisible = False
       OnHide = NewsHide
       OnShow = NewsShow
-      ExplicitLeft = 20
-      ExplicitTop = 28
       object Panel2: TPanel
         Left = 0
         Top = 0
@@ -930,6 +928,24 @@ object ChaoslauncherForm: TChaoslauncherForm
           Height = 17
           Caption = 'Warn about missing adminprivilegues'
           TabOrder = 5
+          OnClick = SettingsChange
+        end
+        object AllowMultiInstance: TCheckBox
+          Left = 16
+          Top = 143
+          Width = 201
+          Height = 17
+          Caption = 'Allow multiple instances'
+          TabOrder = 6
+          OnClick = SettingsChange
+        end
+        object ddemulate: TCheckBox
+          Left = 16
+          Top = 166
+          Width = 201
+          Height = 17
+          Caption = 'Enable DirectDraw Emulation'
+          TabOrder = 7
           OnClick = SettingsChange
         end
       end

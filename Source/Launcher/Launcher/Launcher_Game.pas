@@ -26,9 +26,16 @@ begin
   reg:=nil;
   try
     reg:=TRegistry.create;
-    reg.RootKey:=HKEY_LOCAL_MACHINE;
+    reg.RootKey:=HKEY_CURRENT_USER;
     reg.OpenKeyReadOnly('SOFTWARE\Blizzard Entertainment\Starcraft');
-    FGamePath:=reg.ReadString('InstallPath')+'\';
+    FGamePath:=reg.ReadString('InstallPath');
+    if FGamePath = ''
+      then begin
+        reg.RootKey:=HKEY_LOCAL_MACHINE;
+        reg.OpenKeyReadOnly('SOFTWARE\Blizzard Entertainment\Starcraft');
+        FGamePath:=reg.ReadString('InstallPath');
+      end;
+   FGamePath:=FGamePath+'\';
   finally
     reg.free;
   end;

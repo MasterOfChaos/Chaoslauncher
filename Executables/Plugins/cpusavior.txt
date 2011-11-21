@@ -1,4 +1,4 @@
-CPU Savior Plugin for Chaoslauncher / BWLauncher (v1.5)
+CPU Savior Plugin for Chaoslauncher / BWLauncher (v1.6)
 by R1CH
 
 About
@@ -7,8 +7,6 @@ This plugin will introduce a 1 millisecond delay every time StarCraft queries
 Windows to ask what the time is (GetTickCount). Since StarCraft does this so
 often with no delay, it results in 100% CPU usage. With this plugin, CPU use
 is greatly reduced.
-
-Replaying replays at high speed with this plugin will result in some lag.
 
 Risks
 -----
@@ -43,3 +41,10 @@ v1.4 (Jun 02 2008)
 
 v1.5 (Sep 14 2008)
   * Updated offsets for 1.15.3 patch.
+
+v1.6 (Jan 10 2010)
+  * Updated offsets for 1.16.1 patch. Note, 1.16.1 contains CPU Throttling
+    which has a similar effect to CPU Savior, however some people report that
+    CPU Throttling causes small mouse lag, likely related to no timeBeginPeriod
+    call. Be sure to disable CPU Throttling if using this plugin with 1.16.1.
+

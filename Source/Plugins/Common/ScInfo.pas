@@ -31,6 +31,10 @@ function GetVespine(PlayerNr:TPlayerID):integer;
 function GetLocalPlayer:TPlayerID;
 function GetLocalFaction:TPlayerID;
 function GetPlayerName(Player: TPlayerID): string;
+function GetUnitCount(PlayerNr:byte;UnitID:integer):integer;
+function GetUnitCountWB(PlayerNr:byte;UnitID:integer):integer;
+
+
 
 var Trainer:TTrainer;
 procedure OpenScInfo(ProcessHandle:THandle);
@@ -118,7 +122,16 @@ begin
   result:=Trainer.ReadStrZT(Addresses.PlayerNames+36*Player,24);
 end;
 
-//
+function GetUnitCount(PlayerNr:byte;UnitID:integer):integer;
+begin
+  result:=Trainer.DWord[Addresses.UnitCounts+$30*UnitID+$4*PlayerNr];
+end;
+
+function GetUnitCountWB(PlayerNr:byte;UnitID:integer):integer;
+begin
+  result:=Trainer.DWord[Addresses.UnitCountsWithBuild+$30*UnitID+$4*PlayerNr];
+end;
+
 
 procedure OpenScInfo(ProcessHandle:THandle);
 begin

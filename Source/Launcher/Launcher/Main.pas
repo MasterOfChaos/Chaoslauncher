@@ -91,6 +91,8 @@ type
     BrowseInstallPath: TButton;
     PathOpenDialog: TOpenDialog;
     ScPort: TComboBox;
+    AllowMultiInstance: TCheckBox;
+    ddemulate: TCheckBox;
     procedure StartClick(Sender: TObject);
     procedure Exit1Click(Sender: TObject);
     procedure ShowConfig(Sender: TObject);
@@ -259,6 +261,9 @@ begin
   Settings.AutoUpdate:=AutoUpdate.checked;
   Settings.WarnNoAdmin:=WarnNoAdmin.checked;
   Settings.GameDataPort:=strtoint(ScPort.text);
+  Settings.AllowMultiInstance:=AllowMultiInstance.Checked;
+  Settings.ddemulate:=ddemulate.Checked;
+
   NeedsRestart:=ScInstallPath.text<>GamePath;
   SetGamePath(ScInstallPath.text);
   ScInstallPath.text:=GamePath;
@@ -282,14 +287,18 @@ end;
 
 procedure TChaoslauncherForm.LoadSettings(Sender: TObject);
 begin
-  Settings.load;
+  Settings.Load;
   StartMinimized.checked:=Settings.StartMinimized;
   MinimizeOnRun.checked:=Settings.MinimizeOnRun;
   RunScOnStartup.checked:=Settings.RunScOnStartup;
   AutoUpdate.Checked:=Settings.Autoupdate;
   WarnNoAdmin.Checked:=Settings.WarnNoAdmin;
+  ddemulate.Checked:=Settings.ddemulate;
+  AllowMultiInstance.Checked:=Settings.AllowMultiInstance;
+
   ScInstallpath.text:=GamePath;
   ScPort.text:=inttostr(Settings.GameDataPort);
+
   SettingsChanged:=false;
   SettingsOk.Enabled:=false;
   SettingsCancel.Enabled:=false;
@@ -628,8 +637,6 @@ begin
 
   Log('Chaosauncher '+VersionToStr(GetProgramVersion)+' on '+GetWindowsVersionStr+' at '+paramstr(0));
 
-  Log('Load Settings');
-  Settings.Load;
   Log('GamePath: '+GamePath);
 
   Log('Load Plugins');

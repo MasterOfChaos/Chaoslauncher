@@ -10,6 +10,8 @@ Type TSettings=record
       GameDataPort:integer;
       Autoupdate:boolean;
       WarnNoAdmin:boolean;
+      AllowMultiInstance:boolean;
+      ddemulate:boolean;
       procedure Load;
       procedure Save;
     end;
@@ -27,6 +29,8 @@ begin
   RunScOnStartup:=ini.ReadBool('Launcher','RunScOnStartup',false);
   AutoUpdate:=ini.ReadBool('Launcher','AutoUpdate',false);
   WarnNoAdmin:=ini.ReadBool('Launcher','WarnNoAdmin',true);
+  AllowMultiInstance:=ini.ReadBool('Launcher','AllowMultiInstance',false);
+  ddemulate:=ini.ReadBool('Launcher','ddemulate',false);
   reg:=nil;
   try
     reg:=TRegistry.create;
@@ -48,6 +52,8 @@ begin
   ini.WriteBool('Launcher','RunScOnStartup',RunScOnStartup);
   ini.WriteBool('Launcher','AutoUpdate',Autoupdate);
   ini.WriteBool('Launcher','WarnNoAdmin',WarnNoAdmin);
+  ini.WriteBool('Launcher','AllowMultiInstance',AllowMultiInstance);
+  ini.WriteBool('Launcher','ddemulate',ddemulate);
   reg:=nil;
   try
     reg:=TRegistry.create;

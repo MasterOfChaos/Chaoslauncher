@@ -1,7 +1,7 @@
 unit Plugins;
 
 interface
-uses windows,classes,sysutils,util,logger,math,forms,update,versions,Launcher_game;
+uses windows,classes,sysutils,util,logger,math,forms,update,versions,Launcher_game,dialogs,controls;
 
 type
 TLadder=class;
@@ -170,6 +170,7 @@ procedure LoadPlugins;
  end;
 
 begin
+  Log('AdvLoaderPluginPath: '+AdvPluginPath);
   setlength(PluginData,0);
   FindInDirectory(extractfilepath(paramstr(0)),'*.*');
   FindInDirectory(AdvPluginPath,'*.bwp');
@@ -398,10 +399,16 @@ var ProcessInfo:TProcessInformation;
     wnd:THandle;
     error:Cardinal;
     StartTime:Cardinal;
+    argsPC:PChar;
 begin
   UpdateScRunning;
   if GameInfo.Running then raise exception.create(GameName+' is already running');
-  if (AProcessID=0)and(GameFindProcessID<>0) then raise exception.create('An external instance of'+GameName+' is already running');
+  if (AProcessID=0)and(GameFindProcessID<>0)and(not settings.AllowMultiInstance)
+    then begin
+      if(MessageDlg('An external instance of'+GameName+' is already running',
+                 mtWarning,[mbAbort,mbIgnore],0)<>mrIgnore)
+      then exit;
+    end;
   try
     GameInfo.Clear;
     Log('Starting Game '+Version.Name+' '+Version.Filename);
@@ -431,7 +438,10 @@ begin
         Log('CreateProcess');
         fillchar(ProcessInfo,sizeof(Processinfo),0);
         fillchar(StartupInfo,sizeof(StartupInfo),0);
-        if not CreateProcess(PChar(Version.Filename),nil,nil,nil,false,CREATE_SUSPENDED,nil,PChar(extractfilepath(Version.filename)),StartupInfo,ProcessInfo)
+        if settings.ddemulate
+          then argsPC:='ddemulate'
+          else argsPC:=nil;
+        if not CreateProcess(PChar(Version.Filename),argsPC,nil,nil,false,CREATE_SUSPENDED,nil,PChar(extractfilepath(Version.filename)),StartupInfo,ProcessInfo)
           then raise exception.create('Could not start Starcraft '#13#10+GetLastErrorString+#13#10+Version.Filename);
         GameInfo.hProcess:=ProcessInfo.hProcess;
         GameInfo.hThread:=ProcessInfo.hThread;

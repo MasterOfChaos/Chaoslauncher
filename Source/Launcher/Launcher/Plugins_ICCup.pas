@@ -335,8 +335,7 @@ begin
   inherited;
   if (lowercase(extractfilename(PluginInfo.Filename))<>'iccscbn.icc')and
      (lowercase(extractfilename(PluginInfo.Filename))<>'chaosplugin.bwl')and
-     //(lowercase(extractfilename(PluginInfo.Filename))<>'cpusavior.bwl')and
-     (lowercase(extractfilename(PluginInfo.Filename))<>'repfix.bwl')and
+     (lowercase(extractfilename(PluginInfo.Filename))<>'cpusavior.bwl')and
      (lowercase(extractfilename(PluginInfo.Filename))<>'icctv.bwl')and
      (lowercase(extractfilename(PluginInfo.Filename))<>'icctvp.bwl')and
      (lowercase(extractfilename(PluginInfo.Filename))<>'wmode.bwl')

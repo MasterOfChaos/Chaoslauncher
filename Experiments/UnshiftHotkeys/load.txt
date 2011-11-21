@@ -1,0 +1,30 @@
+/   SCM Loader config file
+/
+/   All lines starting with a "/" are ignored by the application.
+/   You can consider them comments.
+/   
+/   You simply list all your dlls here. However, there are some
+/   advanced options.
+/
+/   Type {text} denotes text, {bool} means either 0 or 1 (off or on).
+/
+/        #LM:{text}  - Default launching mode. Set to "launch" or "window", or ommit completely to choose.
+/        #SC:{path}  - Set the path for the launcher to use.
+/        #WN:{text}  - Search for a specific window name.
+/        #CN:{text}  - Search for a specific class name.
+/	 #DP:{bool}  - If the launcher mode should make process patches.
+/
+/   Variables are set like this:
+/        #SC:starcraft.exe
+/        #WN:StarCraft
+/   Except not including the comment marker and following whitespace.
+/
+/
+/   SC_Modder
+/   www.bwhacks.com
+/
+/
+#LM:window
+#DP:1
+/ put DLLs here
+UnshiftHotkeys.dll

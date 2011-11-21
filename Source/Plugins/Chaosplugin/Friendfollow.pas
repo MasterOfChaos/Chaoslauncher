@@ -4,11 +4,12 @@ interface
 
 implementation
 uses windows,sysutils,main,logger;
-const FriendJoinStr:array[0..3]of string=(
+const FriendJoinStr:array[0..4]of string=(
   'hat sich in ein Starcraft Broodwar-Spiel mit dem Namen # eingeklinkt',
   'hat sich in ein Starcraft-Spiel mit dem Namen # eingeklinkt',
   'entered a Starcraft Broodwar game called #.',
-  'entered a Starcraft game called #.');
+  'entered a Starcraft game called #.',
+  'has entered a Starcraft: Brood War game named "#".');
 procedure FollowFriend;
 var ParentHWND,HWND:integer;
     ItemCount:integer;

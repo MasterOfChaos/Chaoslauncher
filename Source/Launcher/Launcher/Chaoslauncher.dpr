@@ -30,7 +30,10 @@ uses
 {$R *.res}
 begin
   try
-    if not IsFirstInstance
+    Log('Load Settings');
+    Settings.Load;
+    
+    if (not IsFirstInstance)and (not Settings.AllowMultiInstance)
       then begin
         Log('Already running');
         ActivateOldInstance;
