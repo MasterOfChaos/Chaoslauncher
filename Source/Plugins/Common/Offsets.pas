@@ -155,7 +155,7 @@ const Addresses1160:TAddresses=(
 const Addresses1161:TAddresses=(
        LobbyPlayerInfo: $0057EEE8; //data
        NetModeLatency : $004D962B; //code
-       ReducedUsetLat : $004859D7; //code
+       ReducedUsetLat : $00485AE7; //code
        GameName       : $005967FC; //string
        Bnet           : $006D5ED0; //LongBool
        Ingame         : $006D11EC; //DW
